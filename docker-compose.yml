@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=development
+      - PORT=8888
     volumes:
       - .:/home/node/app:rw
     ports:
-      - "9000:9000"
+      - "8888:8888"
